@@ -1,0 +1,157 @@
+.today{
+    background-color: #26375a;
+    width: 25vw;
+    height: 100%;
+}
+
+#openSearch{
+    display: none;
+}
+
+
+#searchPlaces{
+    cursor: pointer;
+    color: white;
+    width: 20vw;
+    border-radius: 5px;
+    background-color: #152036;
+}
+
+.search label{
+    margin-left: 10px;
+}
+
+
+#searchPlaces:hover{
+    width: 24vw;
+    color: red;
+    transition: all .5s;
+}
+
+#openSearch:checked ~ .search{
+    transform: translateX(0px);
+    transition: transform .5s;
+}
+
+button{
+    background-color: #3f4d6b;
+    color: whitesmoke;
+    border: none;
+    height: 30px;
+    border-radius: 3px;
+    margin:30px;
+}
+
+.search{
+    width: 25vw;
+    transform: translateX(-25vw);
+    transition: transform .5s;
+    background-color: #152036;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.search input{
+    width: 100px;
+    background-color: #3f4d6b;
+    margin-left: 5px;
+    border-radius: 5px;
+    border-color: #3f4d6b;
+    border-style: none;
+    color:white;
+    outline: none;
+}
+
+.search input, label{
+    margin-top: 5px;
+}
+
+.search input:hover{
+    border-color: #1d3057;
+}
+
+.aparte{
+    position: fixed;
+    top:100px;
+    width: 25vw;
+    text-align: center;
+    z-index: 0;
+    color: white;
+}
+
+.nothing{
+    color: white;
+}
+
+.nothing h2 {
+    margin-top: 25px;
+}
+
+.todayIc img{
+    margin-top: 10px;
+    width: 120px;
+}
+
+.todayIc h1{
+    color: white;
+}
+
+.dateT p{
+    margin: auto;
+}
+
+.search, .dateT, .ubi, .todayIc{
+    color:whitesmoke;
+}
+
+.dateT p, .ubi p, .todayIc h1{
+    margin-top: 5vh;
+}
+
+@media screen and (max-width: 720px) {
+
+    .today{
+        width: 100vw;
+        height: 500px;
+        text-align: center;
+    }
+
+    .search{
+        width: 100vw;
+        height: 70px;
+        transform: translateX(0vw);
+        position: relative;
+        z-index: 0;
+        display: flex;
+    }
+
+    .search input{
+        height: 22px;
+    }
+
+    #searchPlaces{
+        width: 30vw;
+        margin-left: 5px;
+    }
+
+    .search button{
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+
+    #openSearch:checked ~ .search{
+        transform: translateX(-100vw);
+        transition: transform .5s;
+    }
+
+    .aparte{
+       width: 100vw;
+       position: absolute;
+       margin:0px auto;
+    }
+
+}

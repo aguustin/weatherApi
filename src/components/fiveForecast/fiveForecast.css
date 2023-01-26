@@ -1,0 +1,40 @@
+
+.fiveForecast{
+    position: relative;
+    background-color: #18253f;
+    color: white;
+    overflow-y: auto;
+    height: 100%;
+    width: 75vw;
+}
+
+.containerForecast{
+    margin: auto;
+    width: 80%;
+}
+
+.detailsForecast{
+    width: 150px;
+    background-color: #1f2f50;
+    margin: auto;
+    margin-top: 7vh;
+    text-align: center;
+    
+}
+
+.detailsForecast p{
+    color: white;
+    margin: 10px;
+}
+
+.detailsForecast img{
+    width: 60px;
+}
+
+@media screen and (max-width: 720px) {
+
+    .fiveForecast{
+        width: 100vw;
+    }
+    
+}

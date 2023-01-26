@@ -5,7 +5,8 @@ import cloudy from '../../icons/cloudy.png';
 import rain from '../../icons/rain.png';
 import storm from '../../icons/storm.png';
 import sun from '../../icons/sun.png';
-   
+import snow from '../../icons/snow.png';
+
 const Today = () => {
     
     const {weather, setWeather} = useContext(WeatherContext);
@@ -82,6 +83,10 @@ if(weather.length > 0){
 
         case "10d":
             weatherIcon  = rain;
+        break;
+
+        case "13d":
+            weatherIcon = snow;
         break;
 
         default: weatherIcon  = null;

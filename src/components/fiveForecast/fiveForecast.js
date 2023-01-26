@@ -6,7 +6,7 @@ import cloudy from '../../icons/cloudy.png';
 import rain from '../../icons/rain.png';
 import storm from '../../icons/storm.png';
 import sun from '../../icons/sun.png';
-   
+import snow from '../../icons/snow.png';  
 
 const FiveForecast = () => {
     
@@ -61,6 +61,10 @@ const FiveForecast = () => {
 
                 case "10d":
                     weatherIcon[i]  = rain;
+                break;
+
+                case "13d":
+                    weatherIcon[i]  = snow;
                 break;
 
                 default: weatherIcon[i] = null;
